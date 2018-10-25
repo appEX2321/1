@@ -1,0 +1,14 @@
+#include <iostream>
+int main()
+{
+ 
+   using namespace std;
+   int farlong = 220, x;
+   farlong = 220;
+   cout<<"Enter the distance:";
+   cin >> x;
+   system("cls");
+   cout << x <<" farlong=" << farlong * x <<" yard" ;
+   system("pause");
+   return 0;
+ }
