@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+ 
+double temperature(double celsius)
+{
+   return 1.8 * celsius + 32;
+}
+ 
+int main()
+{
+   double faren;
+   double celsius;
+ 
+   cin >> celsius;
+ 
+   faren = temperature(celsius);
+   cout << faren << endl;
+}

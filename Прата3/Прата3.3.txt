@@ -1,0 +1,28 @@
+#include<iostream>
+ 
+int main()
+{
+    using namespace std;
+    const int Arcsec = 60; //—екунд в минуте
+    const int Arcmin = 60; //”гловых минут в градусе
+    cout << "Enter a latitude in degrees, minutes, and seconds:" << endl;
+    cout << "First, enter the degrees: ";
+    int degree;
+    cin >> degree;
+    cout << "Next, enter the minutes of arc: ";
+    int minute;
+    cin >> minute;
+    cout << "Finally, enter the seconds of arc: ";
+    int second;
+    cin >> second;
+    double arcm = (double)minute/Arcsec;          //переводим минуты в дес€тичные доли градуса
+    double arcs = (double)second/(Arcsec*Arcmin); // переводим секунды в дес€тичные доли градуса
+    double latitude = degree+arcs+arcm;           //результат
+    cout << degree << " degrees, " << minute << " minutes, " << second << " seconds = " << latitude << " degrees." << endl;
+ 
+    cin.get();
+    cin.get();
+    return 0;
+}
+
+0 

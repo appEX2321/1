@@ -1,0 +1,9 @@
+#include <iostream>
+ 
+int main() {
+
+puts("Vasia Vasin");
+
+puts("Vasin1337@mail.ru");
+return 0;
+}

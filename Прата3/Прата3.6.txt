@@ -1,0 +1,14 @@
+#include <iostream>
+int main()
+{
+    const double Gallon = 3.875;
+    const double Mile = 62.14;
+    double consum;
+    std::cout << "Enter petrol consumption (european style): ";
+    std::cin >> consum;
+    double consum_usa = Mile/(consum/Gallon);
+    std::cout << "Your consumption = " << consum_usa << " miles per gallon\n";
+    std::cin.get();
+    std::cin.get();
+    return 0;
+}

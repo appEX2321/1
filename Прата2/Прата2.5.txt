@@ -1,0 +1,22 @@
+#include <iostream>
+ 
+double convert (double); 
+using namespace std;
+ 
+int main()
+{
+ 
+    double au, lu;
+    cout << "Enter the number of light years : " << endl;
+    cin >> lu;
+    au = convert(lu);
+    cout  << "light years = " << lu<<endl;
+    cout  << "astronomical units = " <<  au<<endl;
+    system("pause");
+    return 0;
+}
+ 
+double convert(double lu)
+{
+    return lu * 63240;
+}
